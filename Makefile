@@ -6,7 +6,7 @@
 #    By: jxie <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/14 20:18:55 by jxie              #+#    #+#              #
-#    Updated: 2018/07/15 16:21:42 by jxie             ###   ########.fr        #
+#    Updated: 2018/07/15 19:13:04 by jxie             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,17 @@ SRCS =	ft_memset.c\
 		ft_isprint.c\
 		ft_toupper.c\
 		ft_tolower.c\
+		ft_memalloc.c\
+		ft_memdel.c\
+		ft_strnew.c\
+		ft_strdel.c\
+		ft_strclr.c\
+		ft_striter.c\
+		ft_striteri.c\
+		ft_strmap.c\
+		ft_strmapi.c\
+		ft_strequ.c\
+		ft_strnequ.c\
 		ft_putchar.c\
 		ft_putchar_fd.c\
 		ft_putstr.c\

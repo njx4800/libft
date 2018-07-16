@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/11 14:36:12 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 18:12:59 by jxie             ###   ########.fr       */
+/*   Created: 2018/07/15 18:25:54 by jxie              #+#    #+#             */
+/*   Updated: 2018/07/15 18:28:44 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+char *ft_strnew(size_t size)
 {
-	if (c >= 'A' && c <= 'z')
-		return(1);
-	if (c >= 'a' && c <= 'z')
-		return(1); 
-	return(0);
-}	
+	char *new;
+
+	new = (char *)malloc((size + 1) *sizeof(char));
+	if(!new)
+		return(NULL);
+	ft_bzero(new, size + 1);
+	return(new);
+}

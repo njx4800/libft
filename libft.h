@@ -6,7 +6,7 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 15:23:48 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 16:22:01 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/15 19:22:05 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,11 +66,11 @@ int ft_isprint(int c);
 
 int ft_toupper(int c);
 int ft_tolower(int c);
-//stop here
 
 //additional functions
 void *ft_memalloc(size_t size);
 void ft_memdel(void **ap);
+
 char *ft_strnew(size_t size);
 void ft_strdel(char **as);
 void ft_strclr(char *s);
@@ -82,7 +82,7 @@ char *ft_strmapi(char const *s, char(*f)(unsigned int, char));
 
 int ft_strequ(char const *s1, char const *s2);
 int ft_strnequ(char const *s1, char const *s2, size_t n);
-
+//stop here
 char *ft_strsub(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s);
