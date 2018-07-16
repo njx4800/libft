@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/11 14:36:12 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 18:12:59 by jxie             ###   ########.fr       */
+/*   Created: 2018/07/15 18:47:25 by jxie              #+#    #+#             */
+/*   Updated: 2018/07/15 19:06:59 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+char * ft_strmap(char const *s, char (*f)(char))
 {
-	if (c >= 'A' && c <= 'z')
-		return(1);
-	if (c >= 'a' && c <= 'z')
-		return(1); 
-	return(0);
-}	
+	char *new;
+	size_t len;
+
+	len = 0;
+	if(s == NULL || f == NULL)
+		return(NULL);
+	new = ft_strnew(ft_strlen(s));
+	if(new == NULL)
+		return(NULL);
+	while(*s)
+	{
+		new[len] = f(s[len]);
+		len++;
+	}
+	return(new);
+}
