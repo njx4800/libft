@@ -6,23 +6,23 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/14 22:39:46 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/14 23:03:41 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/23 22:17:21 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strncpy(char *dest, const char *src, size_t len)
+char	*ft_strncpy(char *dest, const char *src, size_t len)
 {
 	char *d1;
 
 	d1 = dest;
-	while(len--)
+	while (len--)
 	{
-		if(*src != '\0')
+		if (*src != '\0')
 			*d1++ = *src++;
 		else
 			*d1++ = '\0';
 	}
-	return(dest);
+	return (dest);
 }

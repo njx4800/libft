@@ -6,15 +6,17 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 16:08:14 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 16:09:23 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/22 20:36:55 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
-	while(*s)
+	if (!s)
+		return ;
+	while (*s)
 	{
 		ft_putchar(*s);
 		s++;

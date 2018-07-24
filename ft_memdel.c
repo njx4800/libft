@@ -6,14 +6,16 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 18:22:05 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 18:23:14 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/23 17:26:23 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
+	if (ap == NULL || *ap == NULL)
+		return ;
 	free(*ap);
 	*ap = NULL;
 }

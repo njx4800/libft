@@ -6,16 +6,16 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 14:30:00 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/14 16:23:35 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/18 10:38:56 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int		ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-		return(1);
+		return (1);
 	else
-		return(0);
+		return (0);
 }

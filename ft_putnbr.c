@@ -6,13 +6,13 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 16:20:06 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 16:21:09 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/23 17:03:19 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
 	ft_putnbr_fd(n, 1);
 }

@@ -6,18 +6,18 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/14 22:19:06 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/14 22:29:44 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/22 12:10:50 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t len;
 
 	len = 0;
-	while(s[len])
+	while (s[len])
 		len++;
-	return(len);
+	return (len);
 }

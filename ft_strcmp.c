@@ -6,18 +6,18 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 10:36:19 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 10:51:37 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/22 19:34:50 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strcmp(const char *s1, const char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	size_t i;
 
 	i = 0;
-	while(s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 		i++;
-	return((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
+	return ((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
 }
