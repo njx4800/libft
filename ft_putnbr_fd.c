@@ -6,22 +6,22 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 16:18:32 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 16:19:50 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/24 14:20:35 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
-		if(n <= -10)
-			ft_putnbr_fd(n /-10, fd);
+		if (n <= -10)
+			ft_putnbr_fd(n / -10, fd);
 		ft_putchar_fd(-(n % 10) + '0', fd);
 	}
-	else if(n >= 10)
+	else if (n >= 10)
 	{
 		ft_putnbr_fd(n / 10, fd);
 		ft_putchar_fd((n % 10) + '0', fd);

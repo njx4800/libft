@@ -6,19 +6,23 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/14 22:34:44 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/14 22:37:58 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/22 12:16:04 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcpy(char *dest, const char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
-	while(*src)
+	char *tmp;
+
+	tmp = dest;
+	while (*src)
 	{
-		*dest = *src;
-		dest++;
+		*tmp = *src;
+		tmp++;
 		src++;
 	}
-	return(dest);
+	*tmp = '\0';
+	return (dest);
 }

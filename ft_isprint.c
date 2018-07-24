@@ -6,16 +6,16 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:36:27 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/11 14:13:28 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/22 12:22:45 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-		return(1);
+		return (1);
 	else
-		return(0);
+		return (0);
 }

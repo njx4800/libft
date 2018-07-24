@@ -6,17 +6,17 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 18:40:32 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 18:42:01 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/22 22:14:34 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	if (s == NULL || f == NULL)
-		return;
-	while(*s)
+		return ;
+	while (*s)
 	{
 		f(s++);
 	}

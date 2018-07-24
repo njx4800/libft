@@ -6,15 +6,17 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 18:32:03 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 18:34:45 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/22 22:09:23 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_strclr(char *s)
+void	ft_strclr(char *s)
 {
-	while(*s)
+	if (s == NULL)
+		return ;
+	while (*s)
 	{
 		*s = 0;
 		s++;

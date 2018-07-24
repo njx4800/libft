@@ -6,14 +6,16 @@
 /*   By: jxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 18:30:01 by jxie              #+#    #+#             */
-/*   Updated: 2018/07/15 18:31:18 by jxie             ###   ########.fr       */
+/*   Updated: 2018/07/23 17:20:27 by jxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
+	if (!as)
+		return ;
 	free(*as);
 	*as = NULL;
 }
