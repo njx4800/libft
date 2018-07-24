@@ -6,11 +6,11 @@
 #    By: jxie <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/14 20:18:55 by jxie              #+#    #+#              #
-#    Updated: 2018/07/15 19:13:04 by jxie             ###   ########.fr        #
+#    Updated: 2018/07/24 14:43:31 by jxie             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CFLAGS = -c -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 
 NAME = libft.a
 
@@ -53,6 +53,11 @@ SRCS =	ft_memset.c\
 		ft_strmapi.c\
 		ft_strequ.c\
 		ft_strnequ.c\
+		ft_strsub.c\
+		ft_strjoin.c\
+		ft_strtrim.c\
+		ft_strsplit.c\
+		ft_itoa.c\
 		ft_putchar.c\
 		ft_putchar_fd.c\
 		ft_putstr.c\
@@ -61,26 +66,34 @@ SRCS =	ft_memset.c\
 		ft_putendl_fd.c\
 		ft_putnbr.c\
 		ft_putnbr_fd.c\
-		ft_isspace.c	
+		ft_lstnew.c\
+		ft_lstdelone.c\
+		ft_lstdel.c\
+		ft_lstadd.c\
+		ft_lstiter.c\
+		ft_lstmap.c\
+		ft_isspace.c\
+		ft_strrev.c\
+		ft_wdlen.c\
+		ft_wdcount.c\
+		ft_strndup.c	
 
 OBJS = $(SRCS:.c=.o)
 CC = gcc
 ARRC = ar rc
 RANLIB = ranlib
 
-all:$(NAME)
+all: $(NAME)
 
 $(NAME):
-	@$(CC) $(CFLAGS) $(SRCS)
-	@ar rc $(NAME) $(OBJS)
-	@ranlib $(NAME)
+	$(CC) $(CFLAGS) -c $(SRCS)
+	ar rcs $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 clean:
-	rm -f $(OBJS)
+	/bin/rm -f $(OBJS)
 
-fclean:
-	rm -f $(NAME)
+fclean: clean
+	/bin/rm -f $(NAME)
 
-re:fclean all
-
-.PHONY: clean fclean all re
+re: fclean all
