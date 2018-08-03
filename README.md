@@ -1,2 +1,2 @@
 # libft
-First Project.
+My first own library!
